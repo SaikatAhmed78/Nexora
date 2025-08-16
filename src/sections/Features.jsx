@@ -12,7 +12,7 @@ const Features = () => {
             {features.map((feature) => (
               <div
                 key={feature.id}
-                className="relative z-2 md:px-10 px-5 flex-50 max-md:g7 max-md:border-s3 max-md:rounded-3xl max-md:flex-320"
+                className="relative z-2 md:px-10 px-5 md:pb-10 flex-50 max-md:g7 max-md:border-s3 max-md:rounded-3xl max-md:flex-320"
               >
                 <div className="w-full flex justify-start items-start">
                   <div className="-ml-3 mb-12 flex items-center justify-center flex-col">
@@ -26,10 +26,13 @@ const Features = () => {
                 </div>
 
                 <p className="caption mb-5 max-md:mb-6">{feature.caption}</p>
-                <h2 className="max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h-5">{feature.title}</h2>
+                <h2 className="max-w-400 mb-7 h3 text-p4 max-md:mb-6  max-md:h-5">{feature.title}</h2>
                 <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{feature.text}</p>
                 <Button icon={feature.button.icon}>{feature.button.title}</Button>
               </div>
+
+
+
             ))}
 
 
