@@ -1,20 +1,17 @@
 import Features from "./sections/Features";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
-import Pricing from "./sections/Pricing";
-
+import PlansShowcase from "./sections/PlansShowcase";
 
 const App = () => {
-
-
   return (
-     <main className="overflow-hidden">
-      <Header/>
-      <Hero/>
-      <Features/>
-      <Pricing/>
-     </main>
-  )
+    <main className="overflow-hidden">
+      <Header />
+      <Hero />
+      <Features />
+      <PlansShowcase />
+    </main>
+  );
 };
 
 export default App;
